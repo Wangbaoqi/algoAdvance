@@ -8,7 +8,7 @@
 
 关于自己学习算法的方法论，最重要的是建立算法知识脑图，如下图：
 
-![algo](https://github.com/Wangbaoqi/blogImgs/blob/master/nateImgs/algorithm/algo.png?raw=true)
+![algo mind](.gitbook/assets/algo.png)
 
 建立一套完整、属于自己的体系。其次就是采用**追溯法**，对于自己不知道的知识通过各种比较权威的文章进行学习。最后就是**不断练习、不断coding、不断回顾。**
 
