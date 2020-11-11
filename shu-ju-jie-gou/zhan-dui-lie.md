@@ -307,5 +307,5 @@ class MonotonicQueue {
 
 ### 栈 队列的应用
 
-栈和队列的应用请看**常用算法**中的栈、队列系列
+栈和队列的应用请看**常用算法**中的!\[栈、队列系列\]\([https://wangbaoqi.gitbook.io/algo/chang-yong-suan-fa-xi-lie/zhan-he-dui-lie](https://wangbaoqi.gitbook.io/algo/chang-yong-suan-fa-xi-lie/zhan-he-dui-lie)\)
 
