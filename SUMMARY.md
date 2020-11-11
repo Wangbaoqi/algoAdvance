@@ -11,7 +11,9 @@
     * [队列常用算法](chang-yong-suan-fa-xi-lie/zhan-he-dui-lie/dui-lie-chang-yong-suan-fa.md)
     * [栈常用算法](chang-yong-suan-fa-xi-lie/zhan-he-dui-lie/zhan-chang-yong-suan-fa.md)
   * [二叉树](chang-yong-suan-fa-xi-lie/er-cha-shu.md)
-* [算法技巧系列](suan-fa-ji-qiao-xi-lie.md)
+* [算法技巧系列](suan-fa-ji-qiao-xi-lie/README.md)
+  * [滑动窗口模式](suan-fa-ji-qiao-xi-lie/hua-dong-chuang-kou-mo-shi.md)
+  * [递归算法模式](suan-fa-ji-qiao-xi-lie/di-gui-suan-fa-mo-shi.md)
 * [高频面试系列](gao-pin-mian-shi-xi-lie.md)
 * [技术文章系列](ji-shu-wen-zhang-xi-lie.md)
 
