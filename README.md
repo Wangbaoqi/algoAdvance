@@ -56,7 +56,7 @@ description: 致力于每天刷一道题
 {% endtab %}
 
 {% tab title="栈、队列" %}
-
+* [剑指 Offer 59 - II. 队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/solution/)
 {% endtab %}
 
 {% tab title="二叉树" %}
@@ -72,8 +72,14 @@ description: 致力于每天刷一道题
 {% endtab %}
 
 {% tab title="滑动窗口" %}
+* [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
+* [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/)
+* [424. 替换后的最长重复字符](https://leetcode-cn.com/problems/longest-repeating-character-replacement/)
+* [438. 找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/)
+* [1004. 最大连续1的个数 III](https://leetcode-cn.com/problems/max-consecutive-ones-iii/solution/)
+* [面试题 17.18. 最短超串](https://leetcode-cn.com/problems/shortest-supersequence-lcci/)
 * [剑指 Offer 59 - I. 滑动窗口的最大值](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
-* 
+* [剑指 Offer 48. 最长不含重复字符的子字符串](https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
 {% endtab %}
 {% endtabs %}
 
