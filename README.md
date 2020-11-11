@@ -18,3 +18,23 @@ description: 致力于每天刷一道题
 
 最后，也是最重要的 **坚持 坚持 坚持 ！！！**
 
+**本站已刷题目**
+
+{% tabs %}
+{% tab title="数组" %}
+* 🐵 [simple 1.两数之和](https://leetcode-cn.com/problems/two-sum/)             
+* 🐵 [simple 26. 删除排序数组中的重复项 ](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
+* 🐵 [simple 27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
+{% endtab %}
+
+{% tab title="栈、队列" %}
+
+{% endtab %}
+
+{% tab title="二叉树" %}
+
+{% endtab %}
+{% endtabs %}
+
+
+
