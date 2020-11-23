@@ -2,6 +2,7 @@
 
 * [算法导航](README.md)
 * [数据结构系列](shu-ju-jie-gou/README.md)
+  * [链表](shu-ju-jie-gou/lian-biao.md)
   * [数组](shu-ju-jie-gou/shu-zu.md)
   * [栈/队列](shu-ju-jie-gou/zhan-dui-lie.md)
   * [二叉树](shu-ju-jie-gou/er-cha-shu.md)
@@ -12,6 +13,7 @@
     * [栈常用算法](chang-yong-suan-fa-xi-lie/zhan-he-dui-lie/zhan-chang-yong-suan-fa.md)
   * [二叉树](chang-yong-suan-fa-xi-lie/er-cha-shu.md)
 * [算法技巧系列](suan-fa-ji-qiao-xi-lie/README.md)
+  * [时钟类似算法](suan-fa-ji-qiao-xi-lie/shi-zhong-lei-si-suan-fa.md)
   * [滑动窗口模式](suan-fa-ji-qiao-xi-lie/hua-dong-chuang-kou-mo-shi.md)
   * [递归算法模式](suan-fa-ji-qiao-xi-lie/di-gui-suan-fa-mo-shi.md)
 * [高频面试系列](gao-pin-mian-shi-xi-lie.md)
