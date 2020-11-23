@@ -4,15 +4,11 @@
 
 数组的操作大概有**读取、插入和删除**
 
-{% embed url="https://codepen.io/WiizMamel/pen/vmQgqv%20%20%20" %}
+{% embed url="https://codesandbox.io/s/natealgo-cpofw?file=/src/pages/Home/index.js" %}
 
 \*\*\*\*
 
-{% embed url="https://codesandbox.io/s/rough-field-txtev" %}
-
 \*\*\*\*
-
-
 
 ### 数组的算法
 
