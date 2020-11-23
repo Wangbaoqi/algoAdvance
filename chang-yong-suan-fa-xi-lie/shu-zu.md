@@ -4,12 +4,6 @@
 
 数组的操作大概有**读取、插入和删除**
 
-{% embed url="https://codesandbox.io/s/natealgo-cpofw?file=/src/pages/Home/index.js" %}
-
-\*\*\*\*
-
-\*\*\*\*
-
 ### 数组的算法
 
 ### 将数组扁平化去重得到升序不重复数组
