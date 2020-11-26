@@ -950,8 +950,6 @@ var findDisappearedNumbers = function(nums) {
 };
 ```
 
-### 
-
 ### 寻找数组的中心索引
 
 测试用例以及[LeetCode](https://leetcode-cn.com/problems/find-pivot-index/)
@@ -965,5 +963,29 @@ nums = [1, 7, 3, 6, 5, 6]
 同时, 3 也是第一个符合要求的中心索引。
 ```
 
+#### 前缀法
 
+* 时间复杂度 O\(n\) 
+* 空间复杂度 O\(1\) 
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var pivotIndex = function(nums) {
+  let sums = 0, leftSum = 0;
+
+  for(let i = 0; i < nums.length; i++) {
+    sums += nums[i]
+  }
+
+  for(let i = 0; i < nums.length; i++) {
+    // sums 减去右侧以及当前元素的和 等于 左侧和
+    if(leftSum == sums - leftSum - nums[i]) return i;
+    leftSum += nums[i];
+  }
+  return -1;
+};
+```
 
