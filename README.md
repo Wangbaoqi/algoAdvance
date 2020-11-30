@@ -48,10 +48,13 @@ description: 致力于每天刷一道题
 24. 🐵 [simple 674. 最长连续递增序列](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence/)
 25. 🐵 [simple 面试题 01.01. 判定字符是否唯一](https://leetcode-cn.com/problems/is-unique-lcci/)
 26. 🐵 [simple 面试题 01.02. 判定是否互为字符重排](https://leetcode-cn.com/problems/check-permutation-lcci/)
-27. 🐵 [simple 724. 寻找数组的中心索引](https://leetcode-cn.com/problems/find-pivot-index/)
-28. 🙈 [medium 581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
-29. 🙈 [medium 189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/)
-30. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
+27. 🐵 [simple 剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
+28. 🐵 [simple 剑指 Offer 53 - II. 0～n-1中缺失的数字](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
+29. 🐵 [simple 724. 寻找数组的中心索引](https://leetcode-cn.com/problems/find-pivot-index/)
+30. 🐵 [simple 1002. 查找常用字符](https://leetcode-cn.com/problems/find-common-characters/)
+31. 🙈 [medium 581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
+32. 🙈 [medium 189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/)
+33. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
 
   
 {% endtab %}
