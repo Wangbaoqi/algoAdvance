@@ -989,7 +989,35 @@ var pivotIndex = function(nums) {
 };
 ```
 
-### **两个数组的交集 II**
+### **两个数组的交集** 
 
-\*\*\*\*
+题目描述以及[LeetCode](https://leetcode-cn.com/problems/intersection-of-two-arrays/)
+
+```javascript
+/**
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number[]}
+ */
+var intersect = function(nums1, nums2) {
+  let map = new Map()
+  let res = []
+  for(let i = 0; i < nums1.length; i++) {
+    let data = map.get(nums1[i])
+    if(data) {
+      map.set(nums1[i], ++data)
+    }else {
+      map.set(nums1[i], 1)
+    }
+  }
+  for(let i = 0; i < nums2.length; i++) {
+    let data = map.get(nums2[i])
+    if(data) {
+      map.set(nums2[i], --data)
+      res.push(nums2[i])
+    }
+  }
+  return res
+};
+```
 
