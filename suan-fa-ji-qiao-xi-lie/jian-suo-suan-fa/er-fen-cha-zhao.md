@@ -25,6 +25,7 @@ n n/2 n/4 n/8 ... n/2^k
  */
 function binSearch(arr, target) {
   let low = 0, high = arr.length;
+  // low <= high 防止死循环
   while(low <= high) {
     // mid = low + ((high - low) >> 1); 位运算 防止溢出
     let mid = Math.floor((low + high) / 2);

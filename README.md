@@ -14,9 +14,13 @@ description: 致力于每天刷一道题
 
 建立一套完整、属于自己的体系。其次就是采用**追溯法**，对于自己不知道的知识通过各种比较权威的文章进行学习。最后就是**不断练习、不断coding、不断回顾。**
 
-练习的渠道个人选择的是[**LeetCode**](https://leetcode-cn.com/)**，**对于不同的类型的题目进行归类之外，还可以互相学习，有一些知识点归纳的小册也是自己学习的选项。
+练习的渠道个人选择的是[**LeetCode**](https://leetcode-cn.com/u/nate-wang/)**，**对于不同的类型的题目进行归类之外，还可以互相学习，有一些知识点归纳的小册也是自己学习的选项。
 
 最后，也是最重要的 **坚持 坚持 坚持 ！！！**
+
+**推荐算法有关书籍**
+
+* \*\*\*\*[**漫画算法：小灰的算法之旅**](https://image.xjq.icu/books/%E6%BC%AB%E7%94%BB%E7%AE%97%E6%B3%95-%E5%B0%8F%E7%81%B0%E7%9A%84%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85.pdf)\*\*\*\*
 
 **本站已刷题目**
 
@@ -49,18 +53,17 @@ description: 致力于每天刷一道题
 25. 🐵 [simple 628. 三个数的最大乘积](https://leetcode-cn.com/problems/maximum-product-of-three-numbers/)
 26. 🐵 [simple 665. 非递减数列](https://leetcode-cn.com/problems/non-decreasing-array/)
 27. 🐵 [simple 674. 最长连续递增序列](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence/)
-28. 🐵 [simple 面试题 01.01. 判定字符是否唯一](https://leetcode-cn.com/problems/is-unique-lcci/)
-29. 🐵 [simple 面试题 01.02. 判定是否互为字符重排](https://leetcode-cn.com/problems/check-permutation-lcci/)
-30. 🐵 [simple 剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
-31. 🐵 [simple 剑指 Offer 53 - II. 0～n-1中缺失的数字](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
-32. 🐵 [simple 724. 寻找数组的中心索引](https://leetcode-cn.com/problems/find-pivot-index/)
-33. 🐵 [simple 1002. 查找常用字符](https://leetcode-cn.com/problems/find-common-characters/)
-34. 🐵 [simple 1351. 统计有序矩阵中的负数](https://leetcode-cn.com/problems/count-negative-numbers-in-a-sorted-matrix/)
-35. 🙈 [medium 581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
-36. 🙈 [medium 189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/)
-37. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
-
-  
+28. 🐵 [simple 852. 山脉数组的峰顶索引](https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/)
+29. 🐵 [simple 面试题 01.01. 判定字符是否唯一](https://leetcode-cn.com/problems/is-unique-lcci/)
+30. 🐵 [simple 面试题 01.02. 判定是否互为字符重排](https://leetcode-cn.com/problems/check-permutation-lcci/)
+31. 🐵 [simple 剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
+32. 🐵 [simple 剑指 Offer 53 - II. 0～n-1中缺失的数字](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
+33. 🐵 [simple 724. 寻找数组的中心索引](https://leetcode-cn.com/problems/find-pivot-index/)
+34. 🐵 [simple 1002. 查找常用字符](https://leetcode-cn.com/problems/find-common-characters/)
+35. 🐵 [simple 1351. 统计有序矩阵中的负数](https://leetcode-cn.com/problems/count-negative-numbers-in-a-sorted-matrix/)
+36. 🙈 [medium 581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
+37. 🙈 [medium 189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/)
+38. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
 {% endtab %}
 
 {% tab title="栈、队列" %}
