@@ -15,7 +15,7 @@ n n/2 n/4 n/8 ... n/2^k
 
 二分查找的实现框架 
 
-循环方式
+循环方式 
 
 ```javascript
 /**
@@ -63,4 +63,6 @@ function bSearch(arr, low, high, target) {
 ```
 
 ### 二分查找拓展
+
+
 
