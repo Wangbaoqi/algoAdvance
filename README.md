@@ -57,14 +57,15 @@ description: 致力于每天刷一道题
 29. 🐵 [simple 面试题 01.01. 判定字符是否唯一](https://leetcode-cn.com/problems/is-unique-lcci/)
 30. 🐵 [simple 面试题 01.02. 判定是否互为字符重排](https://leetcode-cn.com/problems/check-permutation-lcci/)
 31. 🐵 [simple 面试题 08.03. 魔术索引](https://leetcode-cn.com/problems/magic-index-lcci/)
-32. 🐵 [simple 剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
-33. 🐵 [simple 剑指 Offer 53 - II. 0～n-1中缺失的数字](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
-34. 🐵 [simple 724. 寻找数组的中心索引](https://leetcode-cn.com/problems/find-pivot-index/)
-35. 🐵 [simple 1002. 查找常用字符](https://leetcode-cn.com/problems/find-common-characters/)
-36. 🐵 [simple 1351. 统计有序矩阵中的负数](https://leetcode-cn.com/problems/count-negative-numbers-in-a-sorted-matrix/)
-37. 🙈 [medium 581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
-38. 🙈 [medium 189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/)
-39. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
+32. 🐵 [simple 剑指 Offer 11. 旋转数组的最小数字](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
+33. 🐵 [simple 剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
+34. 🐵 [simple 剑指 Offer 53 - II. 0～n-1中缺失的数字](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
+35. 🐵 [simple 724. 寻找数组的中心索引](https://leetcode-cn.com/problems/find-pivot-index/)
+36. 🐵 [simple 1002. 查找常用字符](https://leetcode-cn.com/problems/find-common-characters/)
+37. 🐵 [simple 1351. 统计有序矩阵中的负数](https://leetcode-cn.com/problems/count-negative-numbers-in-a-sorted-matrix/)
+38. 🙈 [medium 581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
+39. 🙈 [medium 189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/)
+40. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
 {% endtab %}
 
 {% tab title="栈、队列" %}
