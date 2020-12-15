@@ -53,11 +53,10 @@ description: 致力于每天刷一道题
 25. 🐵 [simple 724. 寻找数组的中心索引](https://leetcode-cn.com/problems/find-pivot-index/)
 26. 🐵 [simple 面试题 01.01. 判定字符是否唯一](https://leetcode-cn.com/problems/is-unique-lcci/)
 27. 🐵 [simple 面试题 01.02. 判定是否互为字符重排](https://leetcode-cn.com/problems/check-permutation-lcci/)
-28. 🐵[数字](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
-29. 🐵 [simple 1002. 查找常用字符](https://leetcode-cn.com/problems/find-common-characters/)
-30. 🙈 [medium 581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
-31. 🙈 [medium 189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/)
-32. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
+28. 🐵 [simple 1002. 查找常用字符](https://leetcode-cn.com/problems/find-common-characters/)
+29. 🙈 [medium 581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
+30. 🙈 [medium 189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/)
+31. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
 {% endtab %}
 
 {% tab title="二分法" %}
