@@ -33,8 +33,9 @@ function binSearch(arr, target) {
   while(low <= high) {
     // mid = low + ((high - low) >> 1); 位运算 防止溢出
     let mid = Math.floor((low + high) / 2);
-    if(target == arr[mid]) return mid;
-    if(target < arr[mid]) {
+    if(target == arr[mid]) {
+      return mid;
+    }else if(target < arr[mid]) {
       high = mid - 1
     }else {
       low = mid + 1

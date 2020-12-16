@@ -61,17 +61,18 @@ description: 致力于每天刷一道题
 
 {% tab title="二分法" %}
 1.  [simple 35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
-2.  [simple 349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/)
-3.  [simple 350. 两个数组的交集 II](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/)
-4.  [simple 441**.** 排列硬币](https://leetcode-cn.com/problems/arranging-coins/)
-5.  [simple 744. 寻找比目标字母大的最小字母](https://leetcode-cn.com/problems/find-smallest-letter-greater-than-target/)
-6.  [simple 852. 山脉数组的峰顶索引](https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/)
-7.  [simple 1351. 统计有序矩阵中的负数](https://leetcode-cn.com/problems/count-negative-numbers-in-a-sorted-matrix/)
-8.  [simple 面试题 08.03. 魔术索引](https://leetcode-cn.com/problems/magic-index-lcci/)
-9.  [simple 面试题 10.05. 稀疏数组搜索](https://leetcode-cn.com/problems/sparse-array-search-lcci/)
-10.  [simple 剑指 Offer 11. 旋转数组的最小数字](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
-11.  [simple 剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
-12.  [simple 剑指 Offer 53 - II. 0～n-1中缺失的](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
+2.  [simple 162. 寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
+3.  [simple 349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/)
+4.  [simple 350. 两个数组的交集 II](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/)
+5.  [simple 441**.** 排列硬币](https://leetcode-cn.com/problems/arranging-coins/)
+6.  [simple 744. 寻找比目标字母大的最小字母](https://leetcode-cn.com/problems/find-smallest-letter-greater-than-target/)
+7.  [simple 852. 山脉数组的峰顶索引](https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/)
+8.  [simple 1351. 统计有序矩阵中的负数](https://leetcode-cn.com/problems/count-negative-numbers-in-a-sorted-matrix/)
+9.  [simple 面试题 08.03. 魔术索引](https://leetcode-cn.com/problems/magic-index-lcci/)
+10.  [simple 面试题 10.05. 稀疏数组搜索](https://leetcode-cn.com/problems/sparse-array-search-lcci/)
+11.  [simple 剑指 Offer 11. 旋转数组的最小数字](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
+12.  [simple 剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
+13.  [simple 剑指 Offer 53 - II. 0～n-1中缺失的](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
 {% endtab %}
 
 {% tab title="栈、队列" %}
