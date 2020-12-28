@@ -18,7 +18,7 @@ n n/2 n/4 n/8 ... n/2^k
 #### 模板一 基本框架 循环方式  
 
 {% hint style="info" %}
-在一个**有序的集合**中查找**特定**的字符，有则返回，无则返回-1。
+在一个**有序的集合**中查找**特定**的字符，有则返回其索引，无则返回-1。
 {% endhint %}
 
 ```javascript
@@ -29,7 +29,7 @@ n n/2 n/4 n/8 ... n/2^k
  */
 function binSearch(arr, target) {
   let low = 0, high = arr.length - 1;
-  // low <= high 防止死循环
+  // low <= high 结束条件 low > high
   while(low <= high) {
     // mid = low + ((high - low) >> 1); 位运算 防止溢出
     let mid = Math.floor((low + high) / 2);
@@ -67,7 +67,11 @@ function bSearch(arr, low, high, target) {
 }
 ```
 
-### 
+模板一也是最基本的二分法查找方式，这里有几个重点，查找区间**\[low, high\] 闭区间 和 循环条件 while\(low &lt;= high\)以及 mid + 1 或者 mid - 1。**
+
+1.  查找区间为闭区间，也就是**arr.length - 1**
+2.  循环条件为 low &lt;= high，如果条件为 low &lt; high，其结束循环条件为low = high，那么如果当low = mid + 1 或者 high = mid - 1的值等于 low == high，则就找不到正确的结果
+3.  mid + 1 或者 mid - 1是将整个闭区间分为两个闭区间，也是跟循环条件有关系的
 
 
 
