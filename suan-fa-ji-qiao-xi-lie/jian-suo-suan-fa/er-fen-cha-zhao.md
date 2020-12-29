@@ -15,7 +15,7 @@ n n/2 n/4 n/8 ... n/2^k
 
 二分查找的实现框架 
 
-#### 模板一 基本框架 循环方式  
+### 模板一 基本框架 循环方式  
 
 {% hint style="info" %}
 在一个**有序的集合**中查找**特定**的字符，有则返回其索引，无则返回-1。
@@ -73,5 +73,10 @@ function bSearch(arr, low, high, target) {
 2.  循环条件为 low &lt;= high，如果条件为 low &lt; high，其结束循环条件为low = high，那么如果当low = mid + 1 或者 high = mid - 1的值等于 low == high，则就找不到正确的结果
 3.  mid + 1 或者 mid - 1是将整个闭区间分为两个闭区间，也是跟循环条件有关系的
 
+#### LeetCode 有关模板一的题目
 
+* [35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
+* [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
+* [287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
+* [374. 猜数字大小](https://leetcode-cn.com/problems/guess-number-higher-or-lower/)
 
