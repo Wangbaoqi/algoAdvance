@@ -70,7 +70,7 @@ function bSearch(arr, low, high, target) {
 模板一也是最基本的二分法查找方式，这里有几个重点，查找区间**\[low, high\] 闭区间 和 循环条件 while\(low &lt;= high\)以及 mid + 1 或者 mid - 1。**
 
 1.  查找区间为闭区间，也就是**arr.length - 1**
-2.  循环条件为 low &lt;= high，如果条件为 low &lt; high，其结束循环条件为low = high，那么如果当low = mid + 1 或者 high = mid - 1的值等于 low == high，则就找不到正确的结果
+2.  循环条件为 low &lt;= high，如果条件为 low &lt; high，其结束循环条件为low = high，那么如果当low =   mid + 1 或者 high = mid - 1的值等于 low == high，则就找不到正确的结果
 3.  mid + 1 或者 mid - 1是将整个闭区间分为两个闭区间，也是跟循环条件有关系的
 
 #### LeetCode 有关模板一的题目
@@ -79,4 +79,72 @@ function bSearch(arr, low, high, target) {
 * [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
 * [287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
 * [374. 猜数字大小](https://leetcode-cn.com/problems/guess-number-higher-or-lower/)
+
+### **模板二 高级查询方法** 
+
+{% hint style="info" %}
+**寻找左右两侧边界的查询方法**
+{% endhint %}
+
+这种查找方式在找到目标值的时候并不会直接结束查找，而是缩小对应的区间，直到循环结束。要注意的一点是循环结束要进行打补丁，否则查找结果会超出区间范围。
+
+#### 寻找左侧边界的二分法
+
+先来看看模板
+
+```javascript
+function leftBinSearch(nums, target) {
+  // 查找区间为左开右闭 [low, high)
+  let low = 0, high = nums.length;
+  // 循环结束条件 low == high
+  while(low < high) {
+    let mid = low + ((high - low) >> 1)
+    // 找到目标值 继续向左缩小查找区间
+    if(nums[mid] == target) {
+      high = mid
+    }else if(nums[mid] < target) {
+      high = mid
+    }else {
+      low = mid + 1
+    }
+  }
+  // 打补丁 未找到目标值 low会超出查找区间
+  if(nums[low] != target || low >= num.length) return -1
+  // 找到左侧的目标值
+  return low
+}
+```
+
+
+
+
+
+
+
+#### 寻找右侧边界的二分法
+
+```javascript
+function rightBinSearch(num, target) {
+  // 查找区间为左开右闭 [low, high)
+  let low = 0, high = num.length
+  // 循环结束条件 low == high
+  while(low < high) {
+     let mid = low + ((high - low) >> 1)
+    if(num[mid] > target) {
+      high = mid
+    }else if(target > num[mid]) {
+      low = mid + 1
+    }else if(target == num[mid]) {
+      // 找到目标值 继续向右缩小查找区间
+      low = mid + 1
+    }
+  }
+  // 打补丁
+  if(high - 1 >= num.length || num[high-1] !== target) return -1;
+  // 因为查询区间是右开 因此向左移一位
+  return high - 1
+}
+```
+
+
 
