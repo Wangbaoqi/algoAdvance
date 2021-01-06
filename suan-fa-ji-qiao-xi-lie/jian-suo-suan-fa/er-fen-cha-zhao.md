@@ -95,7 +95,7 @@ function bSearch(arr, low, high, target) {
 ```javascript
 function leftBinSearch(nums, target) {
   // 查找区间为左开右闭 [low, high)
-  let low = 0, high = nums.length;
+  let low = 0, high = nums.length; // or high = nums.length - 1
   // 循环结束条件 low == high
   while(low < high) {
     let mid = low + ((high - low) >> 1)
@@ -103,9 +103,9 @@ function leftBinSearch(nums, target) {
     if(nums[mid] == target) {
       high = mid
     }else if(nums[mid] < target) {
-      high = mid
-    }else {
       low = mid + 1
+    }else if(nums[mid] > target){
+      high = mid
     }
   }
   // 打补丁 未找到目标值 low会超出查找区间
@@ -114,10 +114,6 @@ function leftBinSearch(nums, target) {
   return low
 }
 ```
-
-
-
-
 
 
 
@@ -147,4 +143,11 @@ function rightBinSearch(num, target) {
 ```
 
 
+
+#### LeetCode 有关查找左右侧边界的题目
+
+* [278. 第一个错误的版本](https://leetcode-cn.com/problems/first-bad-version/)
+* [153. 寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
+* [162. 寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
+* [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
