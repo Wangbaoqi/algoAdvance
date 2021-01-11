@@ -16,6 +16,7 @@
     * [栈常用算法](chang-yong-suan-fa-xi-lie/zhan-he-dui-lie/zhan-chang-yong-suan-fa.md)
   * [二叉树](chang-yong-suan-fa-xi-lie/er-cha-shu.md)
 * [算法技巧系列](suan-fa-ji-qiao-xi-lie/README.md)
+  * [排序算法](suan-fa-ji-qiao-xi-lie/pai-xu-suan-fa.md)
   * [检索算法](suan-fa-ji-qiao-xi-lie/jian-suo-suan-fa/README.md)
     * [顺序查找](suan-fa-ji-qiao-xi-lie/jian-suo-suan-fa/shun-xu-cha-zhao.md)
     * [二分查找](suan-fa-ji-qiao-xi-lie/jian-suo-suan-fa/er-fen-cha-zhao.md)
