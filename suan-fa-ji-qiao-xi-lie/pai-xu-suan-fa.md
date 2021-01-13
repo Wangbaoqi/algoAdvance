@@ -87,3 +87,38 @@ function selectSort(arr) {
 
 ![](../.gitbook/assets/insert-sort.gif)
 
+插入排序也有两层循环，外层循环遍历每一个元素，内层循环对外层循环选中的选中的元素跟前一个元素 进行比较，如果选中的元素小于前一个元素，则将前一个元素后移，以此类推。
+
+```javascript
+// 插入排序
+function insertSort(arr) {
+  let tmp, inner;
+  for (let outer = 1; outer < arr.length; outer++) {
+    const tmp = arr[outer];
+    let inner = outer
+    while (inner > 0 && arr[inner - 1] > tmp) {
+      arr[inner] = arr[inner - 1]
+      inner--
+    }
+    arr[inner] = tmp
+  }
+}
+```
+
+### 三种排序算法耗时
+
+这三种基本排序算法基本已经写完了，但是哪个是最优的呢，下面通过耗时来进行比较
+
+```javascript
+// 生成随机数组
+function randomArr(num) {
+  let arr = []
+  for (let i = 0; i < num; i++) {
+    arr[i] = Math.floor(Math.random() * (num+1))
+  }
+  return arr
+}
+```
+
+
+
