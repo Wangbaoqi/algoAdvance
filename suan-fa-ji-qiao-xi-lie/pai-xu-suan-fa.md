@@ -45,6 +45,7 @@ $$
 ```javascript
 // 冒泡算法 解法二 优化时间复杂度
 function bubbleSort(arr) {
+  console.time('bubble start')
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length - 1 - ; j++) {   
       if(arr[j] > arr[j + 1])  {   
@@ -52,6 +53,7 @@ function bubbleSort(arr) {
       }
     }
   }
+  console.timeEnd('bubble start')
 }
 ```
 
@@ -68,6 +70,7 @@ function bubbleSort(arr) {
 ```javascript
 // 选择排序
 function selectSort(arr) {
+  console.time('select start')
   let min
   for (let i = 0; i < arr.length - 1; i++) {
     min = i;
@@ -78,6 +81,7 @@ function selectSort(arr) {
     }
     swap(arr, i, min)
   }
+  console.timeEnd('select start')
 }
 ```
 
@@ -92,6 +96,7 @@ function selectSort(arr) {
 ```javascript
 // 插入排序
 function insertSort(arr) {
+  console.time('insert start')
   let tmp, inner;
   for (let outer = 1; outer < arr.length; outer++) {
     const tmp = arr[outer];
@@ -102,6 +107,7 @@ function insertSort(arr) {
     }
     arr[inner] = tmp
   }
+  console.timeEnd('insert start')
 }
 ```
 
@@ -118,7 +124,24 @@ function randomArr(num) {
   }
   return arr
 }
+// 生成100个随机数
+let testArr = randomArr(100);
+bubbleSort(testArr); // bubble start: 0.76513671875 ms
+selectSort(testArr); // select start: 0.239990234375 ms
+insertSort(testArr); // insert start: 0.02197265625 ms
+
+// 生成1000个随机数
+let testArr = randomArr(1000);
+bubbleSort(testArr); // bubble start: 4.07421875 ms
+selectSort(testArr); // select start: 3.81494140625 ms
+insertSort(testArr); // insert start: 4.828125 ms
+
+// 生成10000个随机数
+let testArr = randomArr(1000);
+bubbleSort(testArr); // bubble start: 162.80908203125 ms
+selectSort(testArr); // select start: 83.802001953125 ms
+insertSort(testArr); // insert start: 0.68994140625 ms
 ```
 
-
+可以看到，随着测试数量的增加，插入排序的耗时越来越少，在测试数量较少时，三种算法的耗时差不多。不过判断哪种算法最优，还要进行大量的数据进行测试。
 
