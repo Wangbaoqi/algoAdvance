@@ -59,11 +59,6 @@ description: 致力于每天刷一道题
 31. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
 {% endtab %}
 
-{% tab title="排序" %}
-1. [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/)
-2. [922. 按奇偶排序数组 II](https://leetcode-cn.com/problems/sort-array-by-parity-ii/)
-{% endtab %}
-
 {% tab title="二分法" %}
 1.  [medium 34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 2.  [simple 35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
