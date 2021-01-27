@@ -59,6 +59,27 @@ description: 致力于每天刷一道题
 31. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
 {% endtab %}
 
+{% tab title="栈、队列" %}
+1. [剑指 Offer 59 - II. 队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/solution/)
+{% endtab %}
+
+{% tab title="二叉树" %}
+1. 🌴 [701. 二叉搜索树中的插入操作](https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/)
+2. 🌴 [450. 删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)
+3. 🌴 [700. 二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/)
+4. 🌴 [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)
+5. 🌴 [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+6. 🌴 [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
+7. 🌴 [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
+8. 🌴 [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)
+9. 🌴 [1038. 从二叉搜索树到更大和树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/)
+{% endtab %}
+
+{% tab title="排序" %}
+1. [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/)
+2. [922. 按奇偶排序数组 II](https://leetcode-cn.com/problems/sort-array-by-parity-ii/)
+{% endtab %}
+
 {% tab title="二分法" %}
 1.  [medium 34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 2.  [simple 35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
@@ -82,20 +103,8 @@ description: 致力于每天刷一道题
 20. 
 {% endtab %}
 
-{% tab title="栈、队列" %}
-1. [剑指 Offer 59 - II. 队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/solution/)
-{% endtab %}
-
-{% tab title="二叉树" %}
-1. 🌴 [701. 二叉搜索树中的插入操作](https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/)
-2. 🌴 [450. 删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)
-3. 🌴 [700. 二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/)
-4. 🌴 [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)
-5. 🌴 [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
-6. 🌴 [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
-7. 🌴 [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
-8. 🌴 [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)
-9. 🌴 [1038. 从二叉搜索树到更大和树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/)
+{% tab title="双指针" %}
+1. [344. 反转字符串 ****](https://leetcode-cn.com/problems/reverse-string/)\*\*\*\*
 {% endtab %}
 
 {% tab title="滑动窗口" %}

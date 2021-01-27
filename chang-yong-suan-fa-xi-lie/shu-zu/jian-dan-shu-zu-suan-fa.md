@@ -1,7 +1,5 @@
 # 简单数组算法
 
-
-
 ### 将数组扁平化去重得到升序不重复数组
 
 测试用例
@@ -1019,5 +1017,34 @@ var intersect = function(nums1, nums2) {
   }
   return res
 };
+```
+
+### 反转字符串
+
+\*\*\*\*[**344. 反转字符串**](https://leetcode-cn.com/problems/reverse-string/)\*\*\*\*
+
+反转字符串在双指针技巧中的左右指针中是比较典型的例子
+
+```javascript
+// 左右指针 - 反转字符串
+
+// 输入：["h","e","l","l","o"]
+// 输出：["o","l","l","e","h"]
+
+const testArr = ["H","a","n","n","a","h"]
+
+const reverseString = (arr) => {
+  let left = 0, right = arr.length - 1;
+  while(left <= right) {
+    let tmp = arr[left];
+    arr[left] = arr[right];
+    arr[right] = tmp;
+
+    left++;
+    right--;
+  }
+}
+
+reverseString(testArr)
 ```
 
