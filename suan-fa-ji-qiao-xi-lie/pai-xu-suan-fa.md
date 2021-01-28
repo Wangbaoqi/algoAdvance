@@ -145,5 +145,33 @@ insertSort(testArr); // insert start: 0.68994140625 ms
 
 可以看到，随着测试数量的增加，插入排序的耗时越来越少，在测试数量较少时，三种算法的耗时差不多。不过判断哪种算法最优，还要进行大量的数据进行测试。
 
+### 快速排序
 
+快速排序是处理大量数据最快的一种算法，其核心思想是分而治之，采用递归的方式将数组分为多个单元，每个单元进行排序，最终依次将每个单元合并。
+
+![&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7684;&#x56FE;&#x89E3;](../.gitbook/assets/quicksort.png)
+
+算法过程：
+
+1. 找到一个基准值（pivot），将待排序数组分成两个字数组
+2. 将小于基准值的值放到子数组中，大于基准值的值放到右子数组中。依次类推，最终将各个子数组合并
+
+```javascript
+// 快速排序
+const quickSort = (arr) => {
+  if(!arr.length) return [];
+
+  let leftArr = [], rightArr = [];
+  let pivot = arr[0]
+
+  for (let i = 1; i < arr.length; i++) {
+    if(arr[i] <= pivot) {
+      leftArr.push(arr[i])
+    }else {
+      rightArr.push(arr[i])
+    }
+  }
+  return quickSort(leftArr).concat(pivot, quickSort(rightArr))
+}
+```
 
