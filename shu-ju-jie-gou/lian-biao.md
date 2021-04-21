@@ -1,10 +1,14 @@
 # 链表
 
-### 
+### 单链表
 
-### 
 
-### 链表的实现
+
+{% embed url="https://codesandbox.io/s/fuck-algorithm-vg5b6?file=/src/algo/listNode/linkList.js&resolutionWidth=320&resolutionHeight=675" %}
+
+
+
+### 单链表的实现
 
 ```javascript
 // 链表
@@ -18,7 +22,7 @@ var linkList = {
       next: null
     }
   }
-}
+}a
 
 // 结点 - 内存块
 function Node(element) {

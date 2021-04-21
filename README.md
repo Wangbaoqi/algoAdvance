@@ -59,6 +59,11 @@ description: 致力于每天刷一道题
 31. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
 {% endtab %}
 
+{% tab title="链表" %}
+1. [单链表的设计](https://leetcode-cn.com/problems/design-linked-list/)
+2. [环形链表 - 判断链表是否有环](https://leetcode-cn.com/problems/linked-list-cycle/submissions/)
+{% endtab %}
+
 {% tab title="栈、队列" %}
 1. [剑指 Offer 59 - II. 队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/solution/)
 {% endtab %}
