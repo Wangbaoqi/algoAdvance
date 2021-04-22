@@ -62,6 +62,7 @@ description: 致力于每天刷一道题
 {% tab title="链表" %}
 1. [单链表的设计](https://leetcode-cn.com/problems/design-linked-list/)
 2. [环形链表 - 判断链表是否有环](https://leetcode-cn.com/problems/linked-list-cycle/submissions/)
+3. [环形链表II - 返回链表入环的第一个节点](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
 {% endtab %}
 
 {% tab title="栈、队列" %}
