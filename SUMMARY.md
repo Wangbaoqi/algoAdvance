@@ -10,7 +10,6 @@
   * [数组](chang-yong-suan-fa-xi-lie/shu-zu/README.md)
     * [简单数组算法](chang-yong-suan-fa-xi-lie/shu-zu/jian-dan-shu-zu-suan-fa.md)
     * [中等数组算法](chang-yong-suan-fa-xi-lie/shu-zu/zhong-deng-shu-zu-suan-fa.md)
-    * [困难数组算法](chang-yong-suan-fa-xi-lie/shu-zu/kun-nan-shu-zu-suan-fa.md)
   * [栈和队列](chang-yong-suan-fa-xi-lie/zhan-he-dui-lie/README.md)
     * [队列常用算法](chang-yong-suan-fa-xi-lie/zhan-he-dui-lie/dui-lie-chang-yong-suan-fa.md)
     * [栈常用算法](chang-yong-suan-fa-xi-lie/zhan-he-dui-lie/zhan-chang-yong-suan-fa.md)

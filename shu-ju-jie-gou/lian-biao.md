@@ -1,10 +1,14 @@
 # 链表
 
-### 
+链表是一种线性存储结构，元素未存储的在连续的内存块中，而是通过类似指针的方式连接每一个节点
 
-### 
+![](../.gitbook/assets/linkedlist.png)
 
-### 链表的实现
+### 单链表
+
+单链表是链表一种表现形式，是单向的，最后的节点执行 `null` ，除非出现环形链表。
+
+### 单链表的实现
 
 ```javascript
 // 链表
@@ -18,7 +22,7 @@ var linkList = {
       next: null
     }
   }
-}
+}a
 
 // 结点 - 内存块
 function Node(element) {
@@ -133,4 +137,12 @@ LLinkList.remove('first')
 
 LLinkList.diaplay()
 ```
+
+### 单链表的算法应用
+
+
+
+
+
+
 
