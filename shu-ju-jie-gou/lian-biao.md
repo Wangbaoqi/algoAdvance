@@ -138,9 +138,9 @@ LLinkList.remove('first')
 LLinkList.diaplay()
 ```
 
-### 单链表的算法应用
+### 环形链表
 
-
+环形链表可以判断一个单链表是否有环·
 
 
 

@@ -63,6 +63,8 @@ description: 致力于每天刷一道题
 1. [单链表的设计](https://leetcode-cn.com/problems/design-linked-list/)
 2. [环形链表 - 判断链表是否有环](https://leetcode-cn.com/problems/linked-list-cycle/submissions/)
 3. [环形链表II - 返回链表入环的第一个节点](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
+4. [相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
+5. [删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
 {% endtab %}
 
 {% tab title="栈、队列" %}
