@@ -65,6 +65,8 @@ description: 致力于每天刷一道题
 3. [环形链表II - 返回链表入环的第一个节点](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
 4. [相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
 5. [删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
+6. [反转链表 - 循环节点添加到头部](https://leetcode-cn.com/problems/reverse-linked-list/)
+7. [移除链表元素 - 哨兵节点](https://leetcode-cn.com/problems/remove-linked-list-elements/)
 {% endtab %}
 
 {% tab title="栈、队列" %}

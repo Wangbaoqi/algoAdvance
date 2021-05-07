@@ -140,7 +140,70 @@ LLinkList.diaplay()
 
 ### 环形链表
 
-环形链表可以判断一个单链表是否有环·
+环形链表可以判断一个单链表是否有环
+
+
+
+### 反转链表 
+
+
+
+```javascript
+const reverseList = function(head) {
+  let dummy = new LinkNode('head')
+  dummy.next = head;
+
+  let forwardNode = dummy.next;
+  let curNode = forwardNode.next;
+
+  while(curNode != null) {
+    forwardNode.next = curNode.next;
+    curNode.next = dummy.next;
+    dummy.next = curNode;
+
+    curNode = forwardNode.next;
+  }
+  return dummy.next
+}
+```
+
+### 移除链表元素
+
+
+
+```javascript
+const removeElements = function(head, val) {
+
+  let dummy = new LinkNode('head')
+  dummy.next = head;
+
+  let prevNode = dummy;
+  let curNode = head;
+
+  while(curNode) {
+    if(curNode.val == val) {
+      prevNode.next = curNode.next;
+    }else {
+      prevNode = curNode
+    }
+    curNode = curNode.next;
+  }
+
+  return dummy.next
+};
+```
+
+
+
+
+
+### 链表在线测试
+
+链表算法测试可以到 `src/algo/linkNode`  
+
+{% embed url="https://codesandbox.io/s/musing-torvalds-tuvbu" %}
+
+
 
 
 
