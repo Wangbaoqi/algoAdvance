@@ -67,6 +67,7 @@ description: 致力于每天刷一道题
 5. [删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
 6. [反转链表 - 循环节点添加到头部](https://leetcode-cn.com/problems/reverse-linked-list/)
 7. [移除链表元素 - 哨兵节点](https://leetcode-cn.com/problems/remove-linked-list-elements/)
+8. [奇偶链表](https://leetcode-cn.com/problems/odd-even-linked-list/)
 {% endtab %}
 
 {% tab title="栈、队列" %}
