@@ -138,6 +138,15 @@ LLinkList.remove('first')
 LLinkList.diaplay()
 ```
 
+### 链表中双指针技巧
+
+[双指针技巧](../suan-fa-ji-qiao-xi-lie/shuang-zhi-zhen-mo-shi.md)在链表的使用只能采用**快慢指针**的模式。这里收集了利用**双指针**解题的算法题。
+
+* 环形链表
+* 环形链表II
+* 相交链表
+* 删除链表的倒数第N个节点
+* 
 ### 环形链表
 
 环形链表可以判断一个单链表是否有环
@@ -194,6 +203,20 @@ const removeElements = function(head, val) {
 ```
 
 
+
+
+
+
+
+### 链表经典问题
+
+
+
+* 反转链表
+* 移除链表元素
+* 奇偶链表
+* 回文链表
+* 复制带随机指针的链表
 
 
 
