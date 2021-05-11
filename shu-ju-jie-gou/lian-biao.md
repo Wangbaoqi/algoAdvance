@@ -149,7 +149,63 @@ LLinkList.diaplay()
 
 ### 环形链表
 
-环形链表可以判断一个单链表是否有环
+环形链表可以判断一个单链表是否有环，见下图
+
+![](../.gitbook/assets/linknode-circle.png)
+
+在考虑到空间复杂度，可以在当前内存中使用快慢指针技巧快速判断。
+
+此方法可以称之为[Floyd 判圈算法](https://zh.wikipedia.org/wiki/Floyd%E5%88%A4%E5%9C%88%E7%AE%97%E6%B3%95)
+
+```javascript
+const hasCycle = function(head) {
+  if(head == null || head.next) return false;
+  // 慢指针
+  let slow = head;
+  // 快指针
+  let fast = head.next;
+  // 快慢指针相遇 则说明有环
+  while(slow != fast) {
+    if(fast == null || fast.next == null) return false;
+    
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+  
+  return true
+}
+```
+
+### 环形链表II
+
+环形链表II 在之前的基础上要**返回入环的第一个节点，也就是下面的`节点2`** 
+
+![](../.gitbook/assets/linknode-circle.png)
+
+```javascript
+const detectCycle1 = (head) => {
+  if(head == null || head.next == null) return null;
+  let slow = head;
+  let fast = head;
+  
+  while(fast !== null) {
+    slow = slow.next;
+    if(fast.next == null) return null;
+    fast = fast.next.next;
+    
+    if(slow == fast) {
+      let curNode = head;
+      
+      while(slow != curNode) {
+        slow = slow.next;
+        curNode = curNode.next;
+      }
+      return slow;
+    }
+  }
+  return null;
+}
+```
 
 
 
