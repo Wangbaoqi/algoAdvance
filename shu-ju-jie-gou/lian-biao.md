@@ -182,20 +182,22 @@ const hasCycle = function(head) {
 
 ![](../.gitbook/assets/linknode-circle.png)
 
+在确认链表有环的前提下，新增一个指针，从链表头部开始移动，同时与快慢指针相遇的节点移动，最终两者都会相遇，相遇节点就是入环的第一个节点。
+
 ```javascript
 const detectCycle1 = (head) => {
   if(head == null || head.next == null) return null;
   let slow = head;
   let fast = head;
-  
+  // 判断是否有环
   while(fast !== null) {
     slow = slow.next;
     if(fast.next == null) return null;
     fast = fast.next.next;
-    
+    // 快慢节点向右 判断有环
     if(slow == fast) {
       let curNode = head;
-      
+      // 寻找入环的第一个节点
       while(slow != curNode) {
         slow = slow.next;
         curNode = curNode.next;
@@ -207,11 +209,13 @@ const detectCycle1 = (head) => {
 }
 ```
 
-
-
 ### 反转链表 
 
+![](../.gitbook/assets/reverse-linknode.png)
 
+如上图流程所示
+
+在链表的基础上新增了一个头结点 `head` , 定义了两个指针 `forward(慢指针)` 和 `curNode(快指针)`  ，将快指针对应的节点移动到 `head` 节点之后，最后移动快指针，以此类推，所有的节点都移动到了头结点之后。
 
 ```javascript
 const reverseList = function(head) {
