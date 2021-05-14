@@ -142,9 +142,9 @@ LLinkList.diaplay()
 
 [双指针技巧](../suan-fa-ji-qiao-xi-lie/shuang-zhi-zhen-mo-shi.md)在链表的使用只能采用**快慢指针**的模式。这里收集了利用**双指针**解题的算法题。
 
-* 环形链表
-* 环形链表II
-* 相交链表
+* [环形链表](ttps://leetcode-cn.com/problems/linked-list-cycle/)
+* [环形链表II](https://leetcode-cn.com/problems/linked-list-cycle-ii/solution/)
+* [相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
 * 删除链表的倒数第N个节点
 
 ### 环形链表
@@ -209,6 +209,42 @@ const detectCycle1 = (head) => {
 }
 ```
 
+### 相交链表
+
+如下图，两个单链表相交，返回相交的起始节点
+
+![](../.gitbook/assets/intersect-linknode.png)
+
+比较简单的方式可以用哈希表，不过这种方式额外增加了空间复杂度，最优的解法是在原地进行操作，也就是使用双指针模式。
+
+A链表和B链表同时进行遍历，循环结束的条件是A链表和B链表当前的节点相同。
+
+```javascript
+const getIntersectionNode = (headA, headB) => {
+  if(headA == null || headB == null) return null;
+  
+  let nodeA = headA;
+  let nodeB = headB;
+  
+  while(nodeA != nodeB) {
+     nodeA = nodeA !== null ? nodeA.next : headB;
+     nodeB = nodeB !== null ? nodeB.next : headA;
+  }
+  
+  return nodeA
+}
+```
+
+上面循环体中当链表A到达尾部的时候，将链表B头结点指向nodeA，同理链表B到达尾结点时，将链表A头结点指向B，这样下次循环的时候两个链表一定会相遇。
+
+### 链表经典问题
+
+* [反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
+* 移除链表元素
+* 奇偶链表
+* 回文链表
+* 复制带随机指针的链表
+
 ### 反转链表 
 
 ![](../.gitbook/assets/reverse-linknode.png)
@@ -261,24 +297,6 @@ const removeElements = function(head, val) {
   return dummy.next
 };
 ```
-
-
-
-
-
-
-
-### 链表经典问题
-
-
-
-* 反转链表
-* 移除链表元素
-* 奇偶链表
-* 回文链表
-* 复制带随机指针的链表
-
-
 
 ### 链表在线测试
 
