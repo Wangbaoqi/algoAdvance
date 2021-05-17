@@ -145,7 +145,7 @@ LLinkList.diaplay()
 * [环形链表](ttps://leetcode-cn.com/problems/linked-list-cycle/)
 * [环形链表II](https://leetcode-cn.com/problems/linked-list-cycle-ii/solution/)
 * [相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
-* 删除链表的倒数第N个节点
+* [删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
 
 ### 环形链表
 
@@ -236,6 +236,73 @@ const getIntersectionNode = (headA, headB) => {
 ```
 
 上面循环体中当链表A到达尾部的时候，将链表B头结点指向nodeA，同理链表B到达尾结点时，将链表A头结点指向B，这样下次循环的时候两个链表一定会相遇。
+
+### 删除链表的倒数第N个节点
+
+如下图，需要删除`4`这个节点
+
+
+
+![](../.gitbook/assets/deleteorder-linknode.png)
+
+一种简单的思路是**计算链表的长度**，得到需要删除节点的顺序位置，然后再遍历链表，删除节点
+
+```javascript
+const removeNthFromEnd = function(head, n) {
+  if(head == null || head.next == null) return head.next;
+  
+  let size = 0;
+  let index = 0;
+  let fast = head;
+  let slow = head;
+  
+  while(curNode !== null) {
+    size++;
+    curNode = curNode.next;
+  }
+  
+  while(slow.next !== null) {
+    if(index == size - n - 1) {
+      slow.next = slow.next.next;
+      return head;
+    }
+    index++;
+    slow = slow.next
+  }
+  return head.next
+}
+```
+
+这种方式是比较简单易理解的，时间和空间复杂度上分别为`O(L)` `O(1)`  。
+
+另一种方式就是**双指针模式，**定义快慢指针，以及哨兵节点（方便处理链表）
+
+![](../.gitbook/assets/deletenode1.png)
+
+先让快指针移动 `n`个步骤，这样之后快慢指针同时移动，直到快指针指向`null` ，此时慢指针指向的就是待删除的节点。如下图，为了方便删除节点，给链表头部新增了`dummy` 节点。
+
+```javascript
+const removeNthFromEnd1 = function(head, n) {
+  
+  let dummny = new LinkNode('head', head); // dummy.next = head
+  
+  let fast = head;
+  let slow = dummny;
+  
+  for(let i = 0; i < n; i++) {
+    fast = fast.next;
+  }
+  
+  while(fast !== null) {
+    fast = fast.next;
+    slow = slow.next;
+  }
+  slow.next = slow.next.next;
+  return dummuy.next; 
+}
+```
+
+
 
 ### 链表经典问题
 
