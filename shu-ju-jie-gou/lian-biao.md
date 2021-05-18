@@ -302,13 +302,11 @@ const removeNthFromEnd1 = function(head, n) {
 }
 ```
 
-
-
 ### 链表经典问题
 
 * [反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
-* 移除链表元素
-* 奇偶链表
+* [移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/)
+* [奇偶链表](https://leetcode-cn.com/problems/odd-even-linked-list/)
 * 回文链表
 * 复制带随机指针的链表
 
@@ -341,7 +339,11 @@ const reverseList = function(head) {
 
 ### 移除链表元素
 
+如下图，删除链表中给定值的节点 `4` 
 
+![](../.gitbook/assets/deletelinknode.png)
+
+可以看到，`dummy` 节点是自定义的头节点，这里定义了一个哨兵节点（为了删除节点）`preNode` 。然后遍历链表，如果有需要删除的节点，哨兵节点指向了删除节点的 next ，反之，哨兵节点跟着当前节点`curNode`移动，直到链表遍历结束。
 
 ```javascript
 const removeElements = function(head, val) {
@@ -364,6 +366,37 @@ const removeElements = function(head, val) {
   return dummy.next
 };
 ```
+
+### 奇偶链表
+
+给定一个单链表，把所有的奇数节点和偶数节点分别排在一起。请注意，这里的奇数节点和偶数节点指的是节点编号的奇偶性，而不是节点的值的奇偶性。  -- _from LeetCode_
+
+![](../.gitbook/assets/oddevenlinknode%20%281%29.png)
+
+上图所示，根据题意，链表的第一个节点肯定是奇节点，下一个是偶节点，以此类推。定义两个移动指针`odd` （奇节点） 和 `even` （偶节点），初次之外，定义一个偶节点 evenNode，指向偶节点链头，目的是将奇链表的尾节点指向该偶链表的头部。
+
+```javascript
+const oddEvenList = function(head) {
+  if(head == null) return head;
+  
+  let odd = head;
+  let even = head.next;
+  // 偶链表头部
+  let evenNode = even;
+  
+  while(even !== null && even.next !== null) {
+    odd.next = even.next;
+    odd = odd.next;
+    even.next = odd.next;
+    even = even.next;
+    // 当前循环奇链表尾部指向偶链表头部
+    odd.next = evenNode;
+  }
+  return head;
+}
+```
+
+### 
 
 ### 链表在线测试
 
