@@ -7,6 +7,16 @@ description: >-
 
 二叉树是树中的一种特殊结构，它的叶子节点不超过两个，使得操作起来效率更加高效。
 
+* [701. 二叉搜索树中的插入操作](https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/)
+* [450. 删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)
+* [700. 二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/)
+* [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)
+* [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+* [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
+* [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
+* [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)
+* [1038. 从二叉搜索树到更大和树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/)
+
 ### 实现二叉树、二叉搜索树
 
 每个树都是由不同的叶子（节点）组成，Node的定义：
@@ -86,6 +96,8 @@ function insert(data) {
 ```
 
 _insert_ 主要是给BST添加节点，BST特点是左节点分布是较小的值，而右节点分组是较大的值，这样的特性在遍历以及查找特定值的时候效率会很高。
+
+
 
 ### 遍历BST
 

@@ -307,8 +307,10 @@ const removeNthFromEnd1 = function(head, n) {
 * [反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 * [移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/)
 * [奇偶链表](https://leetcode-cn.com/problems/odd-even-linked-list/)
-* 回文链表
+* [回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)
 * 复制带随机指针的链表
+* 合并两个有序链表
+* 旋转链表
 
 ### 反转链表 
 
