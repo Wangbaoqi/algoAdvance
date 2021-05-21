@@ -407,7 +407,55 @@ const oddEvenList = function(head) {
 首先，将链表分为两部分，将后半部分进行反转，然后将前半部分跟后半部分进行对比，得出是否是回文链表
 
 ```javascript
+// 链表分成两部分 返回前半部分的尾结点
+const firstHalfLink = (head) => {
+  let fast = head;
+  let slow = head;
+  
+  while(fast.next !== null && fast.next.next != null) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+  return slow;
+}
 
+// 反转链表
+const reverseLink = (head) => {
+  let dummy = new LinkNode('head');
+  dummy.next = head;
+  
+  let forwardNode = dummy.next;
+  let curNode = forwardNode.next;
+  
+  while(curNode !== null) {
+    forwardNode.next = curNode.next;
+    curNode.next = dummy.next;
+    dummy.next = curNode;
+    
+    curNode = forwardNode.next
+  }
+  return dummy.next
+}
+
+// 是否是回文链表
+const isPalindrome = (head) => {
+  if(head == null) return true;
+  
+  const firstListNode = firstHalfLink(head);
+  const secondListNode = reverseLink(firstListNode.next);
+   
+  let result = true;
+  let f = head;
+  let s = secondListNode;
+  
+  while(result && s.next != null) {
+    if(f.val !== s.val) return false;
+    f = f.next;
+    s = s.next;
+  }
+  
+  return result
+}
 ```
 
 ### 链表在线测试
