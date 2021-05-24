@@ -18,7 +18,6 @@
   * [双指针模式](suan-fa-ji-qiao-xi-lie/shuang-zhi-zhen-mo-shi.md)
   * [滑动窗口模式](suan-fa-ji-qiao-xi-lie/hua-dong-chuang-kou-mo-shi.md)
   * [递归算法模式](suan-fa-ji-qiao-xi-lie/di-gui-suan-fa-mo-shi.md)
-* [时钟类似算法](shi-zhong-lei-si-suan-fa.md)
 * [高频面试系列](gao-pin-mian-shi-xi-lie.md)
 * [技术文章系列](ji-shu-wen-zhang-xi-lie.md)
 
