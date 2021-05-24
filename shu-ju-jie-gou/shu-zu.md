@@ -48,72 +48,6 @@ description: 数组是一种非常简单的存储数据的方式，是一种连�
 | of | 根据传入的参数创建一个新数组 |
 | values | 返回包含数组所有值得@@iterator |
 
-### 数组常见API的原生实现
-
-#### Array.prototype.filter 
-
-```javascript
-// this 是执行callback fn 中使用的this的值
-Array.prototype.sfilter = function(fn, thisArg) {
-  let self = thisArg || this;
-  let arr = [];
-
-  for(var i = 0; i < self.length; i++) {
-    // callback 执行的结果
-    /** param 
-     * this[i] 当前的值
-     * i 当前的位置索引
-     * this 当前的引用的数组
-     */
-    fn(self[i], i, self) && arr.push(self[i])
-  }
-  return arr;
-}
-
-// test 1
-let filterArr = arr.sfilter((item, index, arr) => {
-  return item > 4
-}, arr)
-
-// test 2
-let ffArr = Array.prototype.sfilter.call(arr, (item, index, arr) => {
-  return item > 4
-})
-```
-
-#### Array.prototype.map
-
-```javascript
-/**
- * fn callback
- * thisArg 可选参数
- */ 
-Array.prototype.smap = function(fn, thisArg) {
-  let self = thisArg || this;
-  let arr = [];
-  for(let i = 0; i < self.length; i++) {
-    // callback 执行的结果被添加到新数组中
-    arr.push(fn(self[i], i, self))
-  }
-  return arr;
-}
-
-let newArr = arr.smap((item, index, arr) => {
-  return `${item}nate`
-})
-```
-
-#### Array.prototype.reduce
-
-```javascript
-Array.prototype.sreduce = function(fn, initVal) {
-  for(let i = 0; i < this.length; i++) {
-    initVal = fn(initVal, this[i], i, this)
-  }
-  return initVal
-}
-```
-
 ### 数组的常见使用场景
 
 在日常开发中以及业务场景中，使用数组数据结构的话，避免不了会对数据进行操作，也就避免不了在不同的场景下对数组的各种操作
@@ -461,134 +395,58 @@ function arrayDelayering(array) {
 }
 ```
 
-### 数组的排序算法
+### 数组类算法
 
-数组的排序是日常业务跟需求中用到最广泛的，因此非常有必要掌握
+解决数组类算法，通常用的方法以及技巧有`遍历` `哈希表` `前缀法` `排序` `二分法` `双指针` `滑动窗口` `贪心算法` 
 
-**public method**
+下面根据不同的解题方式来整理对应的经典题目。
 
-```javascript
-// 交换相邻数据
-let arr = [2,1,5,4,9,4,6];
+### 前缀法
 
-function swap(arr, index, indexNext) {
-  var cur = arr[index];
-  arr[index] = arr[indexNext];
-  arr[indexNext] = cur;
-}
-```
+[**724. 寻找数组的中心下标**](https://leetcode-cn.com/problems/find-pivot-index/)\*\*\*\*
 
-#### 冒泡排序
+为了了解前缀法，先来看一道题目 **724. 寻找数组的中心下标**
 
-冒泡排序是比较任何相邻的元素，比较两者大小，互相交换。这个也是性能最慢的一个，时间复杂度为O\(n\) = n \* n
+![](../.gitbook/assets/pivotindex.png)
 
-```javascript
-// 冒泡排序
-function bubble(arr) {
-  let len = arr.length;
-  for(let i = 0; i < len; i++) {
-    for(let j = 0; j < len - 1; j++) {
-      if(arr[j] > arr[j+1]) {
-        swap(arr, j, j+1)
-      }
-    }
-  }
-}
+如上图所示， $$numi$$是所要计算的中心下标数值。 $$leftSum$$ 是左边数组的总和， $$rightSum $$ 是右侧数组的总和。
 
-// 改进点；循环之前已经排好序了 之后的几次循环也会执行的，因此在内循环的次数可以改成 len - 1 - i
-for(let i = 0; i < len; i++) {
-  for(let j = 0; j < len - 1 - i; j++) {
-    if(arr[j] > arr[j+1]) {
-      swap(arr, j, j+1)
-    }
-  }
-}
-```
+$$
+totalSum = leftSum + numi + rightSum
+$$
 
-#### 选择排序
+  要 $$leftSum$$ 和 $$rightSum$$ 相等，得出公式
 
-选择排序是一种原址排序算法，大致思路是找到最小的值并将其放置第一位，接着找到第二小的值将其放到第二位，以此类推。。
+$$
+numi = totalSum - 2leftSum
+$$
+
+因此，下面为代码实现
 
 ```javascript
-function select(arr) {
-  let len = arr.length,
-      indexMin;
-  for(let i = 0; i < len - 1; i++) {
-    indexMin = i;
-    for(let j = i; j < len; j++) {
-      if(arr[indexMin] > arr[j]) {
-        indexMin = j
-      }
-    }
-    if(indexMin !== i) {
-      swap(arr, i, indexMin)
-    }
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+const pivotIndex = function(nums) {
+  let totalSum = 0;
+  let sum = 0;
+  // 计算数组和
+  for(let i = 0; i < nums.length; i++) {
+    totalSum += nums[i]
   }
-}
+  
+  for(let j = 0; j < nums.length; j++) {
+    if(nums[j] == totalSum - 2 * sum) {
+      return j
+    }
+    sum += nums[j]
+  }
+  return -1;
+};
 ```
 
-#### 插入排序
 
-插入排序每次排一个数据项 在时间复杂度上要高于冒泡排序
 
-```javascript
-function insertion(arr) {
-  let len = arr.length,
-      j, temp;
-  for(var i = 1; i < len; i++) {
-    j = i;
-    temp = arr[i];
-    while(j > 0 && arr[j-1] > temp) {
-      arr[j] = arr[j-1]
-      j--
-    }
-    arr[j] = temp
-  }
-}
-```
 
-#### 归并排序
-
-归并排序是第一个实际被使用的排序，上述三个性能都不好，归并排序的时间复杂度要稍微好一点O\(n\) = n\*log^n 归并排序是一种分治算法。其思想是将原始数组切分成较小的数组，直到每个小数组只有一个位置，接着将小数组归并成较大的数组，直到最后只有一个排序完毕的大数组
-
-```javascript
-function mergeSort() {
-  array = mergeSortFn(array);
-}
-// 递归函数
-function mergeSortFn(arr) {
-  let len = arr.length;
-  if(len == 1) return arr;
-
-  let mid = Math.floor(length / 2);
-  let left = arr.slice(0, mid);
-  let right = arr.slice(mid, len);
-
-  return merge(mergeSortFn(left), mergeSortFn(right))
-}
-// 归并函数 比较两个元素的大小
-function merge(left, right) {
-  let result = [];
-  let il = 0;
-  let ir = 0;
-
-  while(il < left.length && ir < right.length) {
-    if(left[il] < right[ir]) {
-      result.push(left[il++])
-    }else {
-      result.push(right[ir++])
-    }
-  }
-
-  while(il < left.length) {
-    result.push(left[il++])
-  }
-
-  while(ir < right.length) {
-    result.push(left[ir++])
-  }
-
-  return result
-}
-```
 
