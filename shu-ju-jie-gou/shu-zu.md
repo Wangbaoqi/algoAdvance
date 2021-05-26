@@ -448,5 +448,40 @@ const pivotIndex = function(nums) {
 
 
 
+### 双指针法
 
+双指针可以到 [「算法技巧系列 - 双指针模式」](../suan-fa-ji-qiao-xi-lie/shuang-zhi-zhen-mo-shi.md)查看，这里整理数组中有关双指针解法的题目
+
+1. [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
+2. [27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
+
+### 移动零
+
+```javascript
+题目：给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
+```
+
+![](../.gitbook/assets/removezero.png)
+
+上图描述了使用快慢指针移动零的步骤，是简单的双指针应用
+
+```javascript
+const moveZero = (arr) => {
+  let f = 0;
+  let s = 0;
+  let len = arr.length;
+
+  while(f < len) {
+    if(arr[f] != 0) {
+      let tmp = arr[f];
+      arr[f] = arr[s];
+      arr[s]= tmp;
+      s++
+    }
+    f++
+  }
+}
+```
+
+移动元素也是类似的算法题目。
 
