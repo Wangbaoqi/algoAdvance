@@ -454,6 +454,7 @@ const pivotIndex = function(nums) {
 
 1. [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
 2. [27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
+3. [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
 
 #### 移动零
 
@@ -483,5 +484,9 @@ const moveZero = (arr) => {
 }
 ```
 
-移动元素也是类似的算法题目。
+**移除元素题目**也是类似的算法题目。
+
+```javascript
+
+```
 
