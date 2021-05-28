@@ -2,7 +2,7 @@
 description: 数组是一种非常简单的存储数据的方式，是一种连续存储数据的形式，可以存储不同类型的值
 ---
 
-# 数组
+# 数组结构及算法
 
 数组的使用操作API
 
@@ -446,8 +446,6 @@ const pivotIndex = function(nums) {
 };
 ```
 
-
-
 ### 双指针法
 
 双指针可以到 [「算法技巧系列 - 双指针模式」](../suan-fa-ji-qiao-xi-lie/shuang-zhi-zhen-mo-shi.md)查看，这里整理数组中有关双指针解法的题目
@@ -455,8 +453,9 @@ const pivotIndex = function(nums) {
 1. [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
 2. [27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
 3. [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
+4. [80. 删除有序数组中的重复项 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/)
 
-#### 移动零
+### 移动零
 
 ```javascript
 题目：给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
@@ -484,9 +483,96 @@ const moveZero = (arr) => {
 }
 ```
 
+### **移除元素**
+
 **移除元素题目**也是类似的算法题目。
 
 ```javascript
-
+输入：nums = [3,2,2,3], val = 3
+输出：2, nums = [2,2]
+解释：函数应该返回新的长度 2, 并且 nums 中的前两个元素均为 2。
+你不需要考虑数组中超出新长度后面的元素。例如，函数返回的新长度为 2 ，
+而 nums = [2,2,3,3] 或 nums = [2,2,0,0]，也会被视作正确答案。
 ```
+
+解法跟移除零类似，将需要移除的元素移动到数组的末端
+
+```javascript
+const removeElement = (arr, val) => {
+  let f = 0;
+  let s = 0;
+  let len = arr.length;
+  
+  while(f < len) {
+    if(arr[f] != val) {
+      let tmp = arr[f];
+      arr[f] = arr[s];
+      arr[s] = tmp;
+      s++
+    }
+    f++
+  }
+  return s 
+}
+```
+
+### 删除排序数组中的重复项
+
+```javascript
+给你一个有序数组 nums ，请你 原地 删除重复出现的元素，使每个元素 只出现一次 ，
+返回删除后数组的新长度。不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。
+```
+
+![](../.gitbook/assets/deleteduplicate.png)
+
+上图使用双指针图示了完整的流程，其中有个技巧就是当 `slow` 和 `fast` 指针对应的值不等时， `arr[slow + 1] = arr[fast]`  ，最终`slow+1` 就是移除重复元素后的数组的长度。
+
+```javascript
+const removeDuplicates = (arr) => {
+  let len = arr.length;
+  if(len < 2) return len;
+  
+  let f = 1;
+  let s = 0;
+  while(f < length) {
+    if(arr[f] != arr[s]) {
+      arr[s + 1] = arr[f]
+      s++
+    }
+    f++
+  }
+  return s + 1
+}
+```
+
+### **删除有序数组中的重复项 II**
+
+```javascript
+输入：nums = [1,1,1,2,2,3]
+输出：5, nums = [1,1,2,2,3]
+解释：函数应返回新长度 length = 5, 并且原数组的前五个元素被修改为 1, 1, 2, 2, 3 。 
+不需要考虑数组中超出新长度后面的元素。
+```
+
+该题是上者的变形题，只需改变指针的位置即可
+
+```javascript
+const removeDuplicatesII = (arr) => {
+  let len = arr.length;
+  if(len < 2) return len;
+  let s = 2;
+  let f = 2;
+  
+  while(f < len) {
+    if(arr[s - 2] != arr[f]) {
+      arr[s] = arr[f]
+      s++
+    }
+    f++
+  }
+  return s
+} 
+```
+
+
 
