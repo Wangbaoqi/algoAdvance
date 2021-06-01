@@ -450,10 +450,13 @@ const pivotIndex = function(nums) {
 
 双指针可以到 [「算法技巧系列 - 双指针模式」](../suan-fa-ji-qiao-xi-lie/shuang-zhi-zhen-mo-shi.md)查看，这里整理数组中有关双指针解法的题目
 
+#### 快慢指针
+
 1. [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
 2. [27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
 3. [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
 4. [80. 删除有序数组中的重复项 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/)
+5. [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/)
 
 ### 移动零
 
@@ -574,5 +577,11 @@ const removeDuplicatesII = (arr) => {
 } 
 ```
 
+#### 
 
+#### 对撞指针
+
+1.  [125. 验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)
+2.  [345. 反转字符串中的元音字母](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/)
+3.  [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/)
 

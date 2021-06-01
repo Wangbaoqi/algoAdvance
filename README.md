@@ -57,6 +57,7 @@ description: 致力于每天刷一道题
 29. 🙈 [medium 581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
 30. 🙈 [medium 189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/)
 31. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
+32. 🐵 
 {% endtab %}
 
 {% tab title="链表" %}
@@ -117,6 +118,9 @@ description: 致力于每天刷一道题
 {% tab title="双指针" %}
 1. [344. 反转字符串 ****](https://leetcode-cn.com/problems/reverse-string/)\*\*\*\*
 2. [209. 长度最小的子数组](https://leetcode-cn.com/leetbook/read/array-and-string/c0w4r/)
+3. [125. 验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)
+4. [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/)
+5. [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/)
 {% endtab %}
 
 {% tab title="滑动窗口" %}
