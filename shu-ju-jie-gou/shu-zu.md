@@ -585,3 +585,7 @@ const removeDuplicatesII = (arr) => {
 2.  [345. 反转字符串中的元音字母](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/)
 3.  [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/)
 
+### 验证回文串
+
+
+
