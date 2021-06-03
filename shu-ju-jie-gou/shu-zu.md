@@ -587,5 +587,67 @@ const removeDuplicatesII = (arr) => {
 
 ### 验证回文串
 
+验证回文串是对撞指针比较典型的应用了，也是比较简单的一种，前后指针同时移动，直到两者相遇。
+
+![](../.gitbook/assets/palindrome.png)
+
+算法实现起来也很简单
+
+```javascript
+const isPalindrome = (s) => {
+  s = s.replace(/[^0-9A-Za-z]/g, '').toLowerCase();
+  let len = s.length;
+  let start = 0;
+  let end = len - 1;
+  while(start < end) {
+    if(s[start] != s[end]) return false;
+    start++;
+    end--;
+  }
+  return true;
+}
+```
+
+### 反转字符串中的元音字母
+
+```javascript
+输入："hello"
+输出："holle"
+```
+
+不难看到，该题也可以用对撞指针解决，但是前后指针在每次循环中不能同时移动，这也是对撞指针的另一种使用场景，如下图，展示反转元音字母的图示
+
+![](../.gitbook/assets/reversevowels.png)
+
+可以看到start 和 end 分别判断是否是元音字母（`a , e, i, o, u`）,如果`end` 不是元音字母，end向前移动，进入下个循环，知道是原因字母；`start` 也是同理，当 `start` 和 `end` 都是元音字母时，交换位置，两者指针分别移动一位，以此类推，直到`start` 和 `end` 相遇。
+
+```javascript
+const reverseVowels = function(s) {
+  s = s.split('')
+  let len = s.length;
+  let start = 0;
+  let end = len - 1;
+  let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  
+  while(start < end) {
+    while(start < end && !vowels.includes(s[start])) {
+      start++;
+    }
+    
+    while(start < end && !vowels.includes(s[end])) {
+      end--;
+    }
+    if(vowels.includes(s[start]) && vowels.includes(s[end])) {
+      let tmp = s[start];
+      s[start] = s[end];
+      s[end] = tmp;
+    }
+    start++;
+    end--;
+  }
+  s.join('')
+}
+```
+
 
 
