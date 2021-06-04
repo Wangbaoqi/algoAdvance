@@ -637,6 +637,7 @@ const reverseVowels = function(s) {
     while(start < end && !vowels.includes(s[end])) {
       end--;
     }
+    
     if(vowels.includes(s[start]) && vowels.includes(s[end])) {
       let tmp = s[start];
       s[start] = s[end];
@@ -649,5 +650,58 @@ const reverseVowels = function(s) {
 }
 ```
 
+### 盛最多水的容器
 
+![](../.gitbook/assets/maxarea1.jpeg)
+
+```javascript
+输入：[1,8,6,2,5,4,8,3,7]
+输出：49 
+解释：图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，
+容器能够容纳水（表示为蓝色部分）的最大值为 49。
+```
+
+如果使用暴力破解法，时间复杂度就很高了，没有必要。这里也可以使用对撞指针的，只遍历一次，在时间复杂度和空间复杂度都是最优的。
+
+![](../.gitbook/assets/maxarea.png)
+
+上图展示了指针的移动方向，这里如何判断前后指针的移动才能保证整个区域的面积最大？
+
+$$
+A(s,e) = Math.min(s,e) * (e - s)
+$$
+
+当移动短板（数值较小的）的时候 $$Math.min(s,e)$$ 可能变大，其面积可能变大
+
+当移动长板（数值较大的）的时候 $$Math.min(s,e)$$ 可能变小或者不变 
+
+因此，当start 和 end 指针指向的值 
+
+* `start < end`  `start++`
+* `start > end`  `end--`
+
+每次循环记录最大的值，循环结束，最大的就得到了最大的容器
+
+```javascript
+const maxArea = function(height) {
+  let len = height.length;
+  let start = 0;
+  let end = len - 1;
+  let maxArea = 0;
+  
+  while(start < end) {
+    let area = Math.min(height[start], height[end]) * (end - start);
+    
+    if(height[start] < height[end]) {
+      start++
+    }else {
+      end--
+    }
+    
+    maxArea = Math.max(maxArea, area);
+  }
+  
+  return maxArea;
+}
+```
 
