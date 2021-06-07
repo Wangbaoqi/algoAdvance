@@ -175,3 +175,75 @@ const quickSort = (arr) => {
 }
 ```
 
+该快速排序中在递归中使用了额外的空间，有没有一种方式在原地进行操作。
+
+下面有两种方式进行原地操作：
+
+* 双边循环法
+* 单边循环法
+
+#### 双边循环法
+
+双边循环法是在[对撞指针](shuang-zhi-zhen-mo-shi.md)的基础上，根据基准点（一般第一个元素），将小于基准点的元素移动到其左侧，大于基准点的元素移动到其右侧。
+
+```javascript
+const quickSortMain = (arr) => {
+  let start = 0;
+  let len = arr.length;
+  let end = len - 1;
+  
+  quickSort(arr, start, end);
+}
+
+const quickSort = (arr, start, end) => {
+  if(start >= end) return;
+  // 计算基准值
+  let pivot = partition(arr, start, end);
+  
+  quickSort(arr, start, pivot - 1);
+  quickSort(arr, pivot + 1, end);
+}
+```
+
+如下图 计算下一轮递归的基准值
+
+![](../.gitbook/assets/quicksort_double.png)
+
+首先从`right` 右指针开始，对比基准点 pivot ，大于基准点 `right` 指针向左侧移动，否则移动左指针 `left` 。
+
+如果`left` 小于基准点 `pivot` ，`left` 左指针向右侧移动，直到`left` 大于基准点。
+
+此时，`left` 小于 `right`，则交换两者的值。进行下一轮循环，直到 `left` 和 `right` 相等。
+
+最后，交换基准值和left对应的值，这样基准值左侧就是小于其值的，右侧是大于其值的。最后返回left 作为下一轮递归的基准点。
+
+```javascript
+const partition = (arr, start, end) => {
+  let left = start;
+  let right = end;
+  let pivot = arr[start];
+  
+  while(left != right) {
+    
+    while(left < right && arr[right] > pivot) {
+      right--;
+    }
+    
+    while(left < right && arr[left] < pivot) {
+      left++;
+    }
+    
+    if(left < right) {
+      let tmp = arr[left];
+      arr[left] = arr[right];
+      arr[right] = tmp
+    }
+  }
+  
+  arr[start] = arr[left];
+  arr[left] = pivot;
+  
+  return left;
+}
+```
+
