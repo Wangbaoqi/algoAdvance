@@ -57,7 +57,10 @@ description: 致力于每天刷一道题
 29. 🙈 [medium 581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
 30. 🙈 [medium 189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/)
 31. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
-32. 🐵 
+32. 🐵 [simple 557. 反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/)
+33. 🙈 [medium 151. 翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
+34. 🐵 [simple 118. 杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)
+35. 🐵 [simple  杨辉三角 II](https://leetcode-cn.com/problems/pascals-triangle-ii/solution/)[ ](https://leetcode-cn.com/problems/pascals-triangle-ii/solution/yang-hui-san-jiao-ii-by-leetcode-solutio-shuk/)
 {% endtab %}
 
 {% tab title="链表" %}
