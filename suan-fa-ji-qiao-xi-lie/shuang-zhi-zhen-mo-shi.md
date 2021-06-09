@@ -4,7 +4,7 @@
 
 ### 双指针 - 左右指针
 
-左右指针最典型的应用就是[**二分查找**](jian-suo-suan-fa/er-fen-cha-zhao.md#er-fen-cha-zhao-gai-shu)了，初次之外，[滑动窗口](hua-dong-chuang-kou-mo-shi.md)是左右指针的进阶版
+左右指针最典型的应用就是[**二分查找**](../chang-yong-suan-fa-xi-lie/jian-suo-suan-fa/er-fen-cha-zhao.md#er-fen-cha-zhao-gai-shu)了，初次之外，[滑动窗口](hua-dong-chuang-kou-mo-shi.md)是左右指针的进阶版
 
 ![leetCode ](../.gitbook/assets/doublepoint-left.gif)
 

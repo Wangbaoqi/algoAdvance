@@ -184,7 +184,7 @@ const quickSort = (arr) => {
 
 #### 双边循环法
 
-双边循环法是在[对撞指针](shuang-zhi-zhen-mo-shi.md)的基础上，根据基准点（一般第一个元素），将小于基准点的元素移动到其左侧，大于基准点的元素移动到其右侧。
+双边循环法是在[对撞指针](../suan-fa-ji-qiao-xi-lie/shuang-zhi-zhen-mo-shi.md)的基础上，根据基准点（一般第一个元素），将小于基准点的元素移动到其左侧，大于基准点的元素移动到其右侧。
 
 ```javascript
 const quickSortMain = (arr) => {
@@ -246,6 +246,44 @@ const partition = (arr, start, end) => {
   return left;
 }
 ```
+
+#### 单边循环法
+
+单边循环法是使用一个单指针来遍历，同时`pivot`基准元素也是取的第一位，增加了 `mark` 指针，来标记基准元素左右的边界。如下图，计算第一次获取边界值的循环
+
+![](../.gitbook/assets/quicksort_single.png)
+
+首先记录`pivot`和`mark`指针为首位，循环指针`p`为`pivot`的下一位，判断 `p` 和 `pivot`的大小。
+
+如果 `p` 大于 `pivot`，`p` 继续移动；`p` 小于 `pivot`，`mark`移动一位，之后交换`p`和`mark`的值，这样`mark`边界区分了基准值左右两侧的值。
+
+以此类推，直到`p`移动结束，交换`pivot`和`mark`的值，最终得到了下一轮循环的基准值。
+
+```javascript
+// 这里实现单边循环 其他递归方式以及条件跟上述一致
+const partition_single = (arr, start, end) => {
+
+  let pivot = arr[start];
+  let mark = start;
+
+  for (let p = start + 1; p <= end; p++) {
+    if(arr[p] < pivot) {
+      mark++;
+      let tmp = arr[p];
+      arr[p] = arr[mark];
+      arr[mark] = tmp;
+    }
+  }
+  arr[start] = arr[mark];
+  arr[mark] = pivot；
+
+  return mark
+}
+```
+
+
+
+
 
 
 

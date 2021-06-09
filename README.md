@@ -57,10 +57,8 @@ description: 致力于每天刷一道题
 29. 🙈 [medium 581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
 30. 🙈 [medium 189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/)
 31. 🙈 [medium 532. 数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
-32. 🐵 [simple 557. 反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/)
-33. 🙈 [medium 151. 翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
-34. 🐵 [simple 118. 杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)
-35. 🐵 [simple  杨辉三角 II](https://leetcode-cn.com/problems/pascals-triangle-ii/solution/)[ ](https://leetcode-cn.com/problems/pascals-triangle-ii/solution/yang-hui-san-jiao-ii-by-leetcode-solutio-shuk/)
+32. 🐵 [simple 118. 杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)
+33. 🐵 [simple  杨辉三角 II](https://leetcode-cn.com/problems/pascals-triangle-ii/solution/)[ ](https://leetcode-cn.com/problems/pascals-triangle-ii/solution/yang-hui-san-jiao-ii-by-leetcode-solutio-shuk/)
 {% endtab %}
 
 {% tab title="链表" %}
@@ -123,7 +121,9 @@ description: 致力于每天刷一道题
 2. [209. 长度最小的子数组](https://leetcode-cn.com/leetbook/read/array-and-string/c0w4r/)
 3. [125. 验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)
 4. [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/)
-5. [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/)
+5. [11. 盛最多水的容](https://leetcode-cn.com/problems/container-with-most-water/)
+6. [151. 翻转字符串里的单](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
+7. [557. 反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/)
 {% endtab %}
 
 {% tab title="滑动窗口" %}
