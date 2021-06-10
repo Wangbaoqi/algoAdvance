@@ -78,7 +78,7 @@ function insert(data) {
     while(true) {
       parent = curNode;
       if(data < curNode.data) {
-        cueNode = curNode.left
+        curNode = curNode.left
         if(curNode === null) {
           parent.left = node;
           break;
