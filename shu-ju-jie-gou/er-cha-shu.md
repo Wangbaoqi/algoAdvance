@@ -53,6 +53,8 @@ function BST() {
   this.inOrder = inOrder;
   // 后序遍历
   this.postOrder = postOrder;
+  // 层序遍历
+  this.levelOrder = levelOrder;
   // 获取BST最小值
   this.getMin = getMin;
   // 获取BST最大值
@@ -99,7 +101,7 @@ _insert_ 主要是给BST添加节点，BST特点是左节点分布是较小的�
 
 
 
-### 遍历BST
+### 遍历BST - DFS
 
 树的遍历一般分为`DFS`\(深度优先遍历\)，`BFS`（广度优先遍历）
 
@@ -207,6 +209,38 @@ bst.insert(99);
 bst.insert(22);
 
 bst.postOrder(bst.root); // 3 22 16 37 99 45 23
+```
+
+### 遍历BST - BFS
+
+`BFS`是层序遍历，也就是将二叉树按层次来进行遍历
+
+![](../.gitbook/assets/bst_levelorder.png)
+
+广度优先遍历跟深度优先遍历不同，其不是按照节点的顺序来的，因此在这里要借助`队列`数据结构。
+
+首先，根节点入队，获取其节点值，然后出队，如果根节点有子节点，依次将其入队，然后出队，依次类推，直到整个队列为空
+
+```javascript
+/**
+ * 层序遍历
+ * @param node
+ **/
+function levelOrder(node) {
+  let queue = [];
+  queue.push(node)
+  while(queue.length) {
+    // 出队
+    const curNode = queue.shift();
+    console.log(curNode.data)
+    if(curNode.left) {
+      queue.push(curNode.left)
+    }
+    if(curNode.right) {
+      queue.push(curNode.right)
+    }
+  }
+}
 ```
 
 ### 二叉搜索树查找
