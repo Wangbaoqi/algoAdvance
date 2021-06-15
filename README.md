@@ -81,12 +81,13 @@ description: 致力于每天刷一道题
 2. 🌴 [450. 删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)
 3. 🌴 [700. 二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/)
 4. 🌴 [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)
-5. 🌴 [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
-6. 🌴 [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
-7. 🌴 [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
-8. 🌴 [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)
-9. 🌴 [1038. 从二叉搜索树到更大和树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/)
-10. 🌴 [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+5. 🌴 [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)
+6. 🌴 [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+7. 🌴 [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
+8. 🌴 [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
+9. 🌴 [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)
+10. 🌴 [1038. 从二叉搜索树到更大和树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/)
+11. 🌴 [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 {% endtab %}
 
 {% tab title="排序" %}

@@ -10,12 +10,15 @@ description: >-
 * [701. 二叉搜索树中的插入操作](https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/)
 * [450. 删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)
 * [700. 二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/)
+* [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)
 * [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)
 * [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
 * [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
 * [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
 * [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)
 * [1038. 从二叉搜索树到更大和树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/)
+
+
 
 ### 实现二叉树、二叉搜索树
 
@@ -625,6 +628,10 @@ function mirrorBST(root) {
 }
 ```
 
+### 对称二叉树
+
+
+
 ### 二叉搜索树的第K大节点
 
 题目来自_LeetCode_，[剑指 Offer 54. 二叉搜索树的第k大节点](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)。
@@ -679,7 +686,20 @@ function kthLargest(root, k) {
 
 ```javascript
 /**
- * 二叉树的深度 DFS
+ * 二叉树的深度 DFS 自底向上 递归
+ * @param node root
+ */
+function depthBST(root) {
+  // 结束条件
+  if(root == null) return 0;
+  // 递推公式
+  return Math.max(depthBST(root.left), depthBST(root.right)) + 1
+}
+```
+
+```javascript
+/**
+ * 二叉树的深度 DFS 自底向上 递归
  * @param node root
  */
 function depthBST(root) {
@@ -780,8 +800,6 @@ function BSTInsert(root, data) {
   if(root.data > data) return root.left = BSTInsert(root.left, data);
 }
 ```
-
-### LeetCode 算法题
 
 
 
