@@ -630,7 +630,64 @@ function mirrorBST(root) {
 
 ### 对称二叉树
 
+如下图
 
+![](../.gitbook/assets/bst_same.gif)
+
+判断一个二叉树是是否对称，就要判断相对位置的子节点值是否相等。
+
+#### 自顶向下的递归
+
+分别递归二叉树的左右节点，如果当前节点的左节点和右节点相等，则继续向下递归，直到结束。
+
+```javascript
+function isSymmetric(root) {
+  return check(root. root)
+}
+
+function check(leftNode, rightNode) {
+  if(leftNode == null && rightNode == null) return true;
+  if(leftNode == null || rightNode == null) return false;
+  
+  return leftNode.data == rightNode.data && 
+          check(leftNode.left, rightNode.right) &&
+          check(leftNode.right, rightNode.left)
+}
+```
+
+#### 借用队列循环判断
+
+![](../.gitbook/assets/bst_same_1.gif)
+
+类似于BFS层序遍历，借用队列来记录节点，这里将根节点的左节点和右节点先入队，判断两者是否相等，接着将当前左节点的左节点和当前右节点的右节点入队，以此类推，直到循环结束。
+
+```javascript
+function isSymmetric(root) {
+  // 空节点对称
+  if(root = null) return true;
+  if(root.left == null && root.right == null) return true;
+  
+  let queue = [];
+  
+  queue.push(root.left);
+  queue.push(root.right);
+  
+  while(queue.length) {
+    const left = queue.shift();
+    const right = queue.shift();
+    
+    if(left == null && right == null) continue;
+    if(left == null || right == null) return false;
+    if(left.data != right.data) return false;
+    
+    queue.push(left.left)
+    queue.push(right.right)
+    
+    queue.push(left.right)
+    queue.push(right.left)
+  }
+}
+```
 
 ### 二叉搜索树的第K大节点
 
@@ -683,19 +740,6 @@ function kthLargest(root, k) {
   * 计算左子树的深度
   * 计算右子树的深度
   * 返回树的深度
-
-```javascript
-/**
- * 二叉树的深度 DFS 自底向上 递归
- * @param node root
- */
-function depthBST(root) {
-  // 结束条件
-  if(root == null) return 0;
-  // 递推公式
-  return Math.max(depthBST(root.left), depthBST(root.right)) + 1
-}
-```
 
 ```javascript
 /**
