@@ -138,6 +138,10 @@ description: 致力于每天刷一道题
 7. 🚴 [剑指 Offer 59 - I. 滑动窗口的最大值](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
 8. 🚴 [剑指 Offer 48. 最长不含重复字符的子字符串](https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
 {% endtab %}
+
+{% tab title="动态规划" %}
+1. [剑指 Offer 42. 连续子数组的最大和](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
+{% endtab %}
 {% endtabs %}
 
 
