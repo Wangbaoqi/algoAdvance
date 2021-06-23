@@ -19,7 +19,6 @@ function flat(arr) {
       res.push(item)
     }
   })
-  return res;
 }
 ```
 
@@ -73,6 +72,4 @@ const maxSubArray = (arr) => {
 ```
 
 ### 数组转树形结构
-
-
 
