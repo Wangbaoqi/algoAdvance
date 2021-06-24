@@ -17,6 +17,13 @@ function swap(arr, a, b) {
   arr[a] = arr[b];
   arr[b] = tmp;
 }
+
+// 位运算 进行元素交换
+function swap(arr, a, b) {
+  arr[a] = arr[a] ^ arr[b]
+  arr[b] = arr[b] ^ arr[a]
+  arr[a] = arr[a] ^ arr[b]
+}
 ```
 
 内循环判断相邻元素之间的大小 ，从而进行位置互换
@@ -37,7 +44,7 @@ function bubbleSort(arr) {
 解法一的时间复杂度为
 
 $$
-O（n）= n * (n - 1)
+O（n^2）
 $$
 
 从动态图中不难发现，外循环每循环一次，数组后面的元素的顺序已经排好了，因此这是一部分没有必要的循环，可以在解法一的基础上优化，降低时间复杂度
