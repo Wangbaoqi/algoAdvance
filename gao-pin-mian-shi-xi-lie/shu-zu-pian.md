@@ -1,5 +1,10 @@
 # 数组篇
 
+### 数组高频题
+
+1. [两数之和](https://leetcode-cn.com/problems/two-sum/)
+2. [有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
+
 ### 数组扁平化
 
 给定一个多维数组，将其扁平化为以为数组
