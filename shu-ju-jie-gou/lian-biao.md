@@ -308,6 +308,7 @@ const removeNthFromEnd1 = function(head, n) {
 * [移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/)
 * [奇偶链表](https://leetcode-cn.com/problems/odd-even-linked-list/)
 * [回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)
+* [对链表进行插入排序](https://leetcode-cn.com/problems/insertion-sort-list/)
 * 复制带随机指针的链表
 * 合并两个有序链表
 * 旋转链表
@@ -457,6 +458,48 @@ const isPalindrome = (head) => {
   }
   
   return result
+}
+```
+
+### **链表进行插入排序**
+
+关于插入排序，可以到[「常用算法系列 - 排序算法」](../chang-yong-suan-fa-xi-lie/pai-xu-suan-fa.md#cha-ru-pai-xu)
+
+下图展示了链表插入排序的图示
+
+![](../.gitbook/assets/insersortlink.png)
+
+首先，需要一个哨兵节点来记录整个链表的变化。
+
+其次，需要两个节点来对比大小，`lastNode` 和 `curNode` 
+
+如果`lastNode` 大于 `curNode` ，继续移动`curNode`和`lastNode`
+
+否则从链表头部，如果遇到大于`curNode`的节点，将`curNode`和当前节点交换
+
+```javascript
+const insertionSortList = (head) => {
+  if(head == null) return head;
+  let dummy = new ListNode('head');
+  dummy.next = head;
+  
+  let lastNode = head;
+  let curNode = head.next;
+  while(curNode != null) {
+    if(lastNode.val >= curNode.val) {
+      lastNode = lastNode.next;
+    }else {
+      let prevNode = dummy;
+      while(prevNode.next.val <= curNode.val) {
+        prevNode = prevNode.next;
+      }
+      lastNode.next = curNode.next;
+      curNode.next = prevNode.next;
+      prevNode.next = curNode
+    }
+    curNode = lastNode.next
+  }
+  return dummy.next;
 }
 ```
 
