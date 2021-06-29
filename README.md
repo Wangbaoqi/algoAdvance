@@ -141,6 +141,7 @@ description: 致力于每天刷一道题
 
 {% tab title="动态规划" %}
 1. [剑指 Offer 42. 连续子数组的最大和](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
+2. [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 {% endtab %}
 {% endtabs %}
 

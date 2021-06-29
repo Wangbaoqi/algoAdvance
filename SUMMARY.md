@@ -20,5 +20,7 @@
   * [动态规划模式](suan-fa-ji-qiao-xi-lie/dong-tai-gui-hua-mo-shi.md)
 * [高频面试系列](gao-pin-mian-shi-xi-lie/README.md)
   * [数组篇](gao-pin-mian-shi-xi-lie/shu-zu-pian.md)
-* [技术文章系列](ji-shu-wen-zhang-xi-lie.md)
+  * [动态规划篇](gao-pin-mian-shi-xi-lie/dong-tai-gui-hua-pian.md)
+* [数学问题系列](ji-shu-wen-zhang-xi-lie/README.md)
+  * [斐波那契数](ji-shu-wen-zhang-xi-lie/fei-bo-na-qi-shu.md)
 
