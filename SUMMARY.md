@@ -11,7 +11,7 @@
   * [检索算法](chang-yong-suan-fa-xi-lie/jian-suo-suan-fa/README.md)
     * [顺序查找](chang-yong-suan-fa-xi-lie/jian-suo-suan-fa/shun-xu-cha-zhao.md)
     * [二分查找](chang-yong-suan-fa-xi-lie/jian-suo-suan-fa/er-fen-cha-zhao.md)
-    * [DFS和BFS](chang-yong-suan-fa-xi-lie/jian-suo-suan-fa/dfs-he-bfs.md)
+  * [DFS算法](chang-yong-suan-fa-xi-lie/dfs-suan-fa.md)
   * [递归算法模式](chang-yong-suan-fa-xi-lie/di-gui-suan-fa-mo-shi.md)
 * [算法技巧系列](suan-fa-ji-qiao-xi-lie/README.md)
   * [KMP 算法](suan-fa-ji-qiao-xi-lie/kmp-suan-fa.md)
