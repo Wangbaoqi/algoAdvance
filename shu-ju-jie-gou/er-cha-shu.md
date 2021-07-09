@@ -17,8 +17,7 @@ description: >-
 * [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
 * [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)
 * [1038. 从二叉搜索树到更大和树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/)
-
-
+* [二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
 
 ### 实现二叉树、二叉搜索树
 
@@ -806,6 +805,10 @@ function maxDepth_BFS(root) {
   return depth
 }
 ```
+
+### 二叉树的直径
+
+
 
 ### 二叉树总结
 

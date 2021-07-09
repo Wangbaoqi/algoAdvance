@@ -88,6 +88,7 @@ description: 致力于每天刷一道题
 9. 🌴 [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)
 10. 🌴 [1038. 从二叉搜索树到更大和树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/)
 11. 🌴 [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+12. 🌴 [二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
 {% endtab %}
 
 {% tab title="排序" %}
